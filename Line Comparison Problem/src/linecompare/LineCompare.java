@@ -45,6 +45,28 @@ public class LineCompare {
 		else
 			return false;
 	}
+	/**
+	 * Compares length of two lines, Tells which one is longer
+	 */
+	private static void compareLines() {
+		LineCompare line5 = new LineCompare(1,2,3,6);
+		double length5=line5.calcLength();
+		LineCompare line6 = new LineCompare(0,0,1,1);
+		double length6=line6.calcLength();
+		if(length5==length6)
+		{
+			System.out.println("Equal");
+		}
+		else if(length5>length6)
+		{
+			System.out.println("Line5 > Line6");
+		}
+		else
+		{
+			System.out.println("Line6 > Line5");
+		}
+			
+	}
 
 	public static void main(String[] args) {
 		displayWelcome();
@@ -53,6 +75,7 @@ public class LineCompare {
 		line1.calcLength();
 		line2.calcLength();
         checkEqual();
+        compareLines();
 	}
 
 }

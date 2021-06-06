@@ -31,6 +31,20 @@ public class LineCompare {
 		length=Math.sqrt(Math.pow((x2-x1),2)+Math.pow((y2-y1),2));
 		return length;
 	}
+	/**
+	 * Checks if lines have same length or not
+	 * @return true if lines have same length, otherwise false
+	 */
+	private static boolean checkEqual() {
+		LineCompare line3 = new LineCompare(1,2,3,6);
+		double length3=line3.calcLength();
+		LineCompare line4 = new LineCompare(1,2,5,6);
+		double length4=line4.calcLength();
+		if(length3==length4)
+			return true;
+		else
+			return false;
+	}
 
 	public static void main(String[] args) {
 		displayWelcome();
@@ -38,7 +52,7 @@ public class LineCompare {
 		LineCompare line2=new LineCompare(8,4,1,1);
 		line1.calcLength();
 		line2.calcLength();
-        
+        checkEqual();
 	}
 
 }

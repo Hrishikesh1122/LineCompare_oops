@@ -1,5 +1,9 @@
+/***********************************************
+ * @author Hrishikesh
+ * @version 1.0
+ * @since 06-06-2021
+ ***********************************************/
 package linecompare;
-
 public class LineCompare {
 	
 	private int x1,y1,x2,y2;
